@@ -577,3 +577,38 @@ char *replaceCharWithChar(char *str, const char *delim, const char ch) {
   }
   return str;
 }
+/*~~~~~~~~~~~~~~~Isdigit~~~~~~~~~~~~~~~*/
+unsigned char Isdigit(char n) { return ((n >= '0') && (n <= '9')); }
+
+/*~~~~~~~~~~~~~~~Isletter~~~~~~~~~~~~~~~*/
+unsigned char Isletter(char n) {
+  return (((n >= 'a') && (n <= 'b')) || ((n >= 'A') && (n <= 'Z')));
+}
+/*~~~~~~~~~~~~~~~iTs~~~~~~~~~~~~~~~*/
+char *iTs(int num, char *str) {
+  char is_negative = 0;
+  if (num < 0) {
+    num = -num;
+    is_negative = 1;
+  }
+  unsigned int cnt = 0;
+  while (num != 0) {
+    str[cnt++] = (num % 10) + '0';
+    num /= 10;
+  }
+  if (is_negative) {
+    str[cnt++] = '-';
+  }
+
+  str[cnt] = '\0';
+
+  int j = 0;
+  char tmp = 0;
+  for (j = 0; j < cnt / 2; j++) {
+    tmp = str[j];
+    str[j] = str[cnt - j - 1];
+    str[cnt - j - 1] = tmp;
+  }
+
+  return str;
+}

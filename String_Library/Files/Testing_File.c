@@ -261,6 +261,35 @@ printf("%i\n", r);
 const char str1[] = "3.3";
 float r = sTf(str1);
 printf("%f\n", r);
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+/*~~~~~~~~~~~~~~~replaceCharWithChar~~~~~~~~~~~~~~~
+char str[80] = "This is-www.tutorialspoint.com-website";
+   const char s[2] = "-";
+   char *token;
+
+   token = replaceCharWithChar(str,s,'\n');
+    printf( " %s\n", token );
+/*~~~~~~~~~~~~~~~Isdigit~~~~~~~~~~~~~~~
+    char  x = '9';
+    if(Isdigit(x))
+        printf("digit\n");
+    else
+        printf("Not digit\n");
+/*~~~~~~~~~~~~~~~Isletter~~~~~~~~~~~~~~~
+ char  x = 'Q';
+    if(Isletter (x))
+        printf("Letter\n");
+    else
+        printf("Not letter\n");
+
+ /*~~~~~~~~~~~~~~~iTs~~~~~~~~~~~~~~~
+  int x=-98765;
+   char str[50];
+   printf("%s",iTs(x,str));
+
+
+
+
+
 
 */

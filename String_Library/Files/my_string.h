@@ -67,6 +67,12 @@ float sTf(char *str);
 
 char *replaceCharWithChar(char *str, const char *delim, const char ch);
 
+unsigned char Isdigit(char n);
+
+unsigned char Isletter(char n);
+
+char *iTs(int num, char *str);
+
 #endif
 /*=========================== File Guard End ===========================*/
 
@@ -75,6 +81,6 @@ char *replaceCharWithChar(char *str, const char *delim, const char ch);
 User           Date                 Brief
 ==========================================================================
 Mostafa       29Feb2024           Starts Write Files
-Mostafa       05Mar2024           Ends Write Files
+Mostafa       06Mar2024           Ends Write Files
 ==========================================================================
 */
