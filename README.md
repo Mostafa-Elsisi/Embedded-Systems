@@ -5,6 +5,7 @@ This repository contains various projects related to Embedded Systems. Each proj
 ## Projects
 
 - **Project 1:** [implementation of string library with C].
+- **Project 2:** [Embdia Tasks and Assignments].
 
 
 ## Usage
